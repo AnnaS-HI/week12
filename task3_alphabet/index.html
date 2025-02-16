@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Случайное слово</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AEE2F8;
+            color: #02121a;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #400ef3;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+            background-color: #70ccee;
+            border: 1px solid #02121a;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Генератор случайного слова</h1>
+    <label for="languageSelect">Выберите язык:</label>
+    <select id="languageSelect">
+        <option value="english">Английский</option>
+        <option value="german">Немецкий</option>
+        <option value="russian">Русский</option>
+        <option value="spanish">Испанский</option>
+    </select>
+    <p>Диапазоны случайных индексов: <span id="indexRange"></span></p>
+    <p>Случайное слово: <span id="randomWord"></span></p>
+    <script src="script.js"></script>
+</body>
+
+</html>
